@@ -73,7 +73,6 @@ def set_sys_ntp(bigip, url, servers, tz):
     payload = {}
     payload['servers'] = servers
     payload['timezone'] = tz
-    print json.dumps(payload)
     try:
         bigip.put('%s/sys/ntp' % url, json.dumps(payload))
         get_sys_ntp(bigip, url)
