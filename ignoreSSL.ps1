@@ -1,3 +1,4 @@
+## Source: http://www.datacore.com/RESTSupport-Webhelp/using_windows_powershell_as_a_rest_client.htm
 function Ignore-SelfSignedCerts
 {
     try
